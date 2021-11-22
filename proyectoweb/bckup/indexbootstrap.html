@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!--<link href="/fuente/css/bootstrap.min.css" rel="stylesheet"  >--> 
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      
+      <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+      <link rel="stylesheet" href="../fuente/font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+    <title>OnLineStore</title>
+   
+
+
+<!-- Barra de menú -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >         
+    <!-- Ancho barra de menú y se mantiene en toda la página -->
+    <div class="container-fluid" style="background: #17ABBF; height: 4rem">
+<!-- Contenido Barra de menú -->
+    <a><img src="../fuente/img/logo/logo.png" alt="" style="width: 4rem"></a>&nbsp&nbsp    
+   <a class="navbar-brand" href="#" style="color: darkmagenta">OnLineStore</a>
+        
+        <!--Hamburgesa-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <!--**************-->
+        
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorías
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Audio</a></li>
+            <li><a class="dropdown-item" href="#">Video</a></li>
+            <li><a class="dropdown-item" href="#">Celulares</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Servicios</a></li>
+          </ul>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Contáctanos</a>
+        </li>
+          <li>
+        &nbsp&nbsp&nbsp&nbsp<span class="iconify" data-icon="emojione-monotone:shopping-cart" data-width="30"></span>
+          </li>
+      </ul>
+      <form class="d-flex" style="margin-right: 15%">
+        <input class="form-control me-2" type="search" placeholder="¿Qué buscas?" aria-label="Search">
+        <button class="btn btn-light" type="submit" style="color: brown; width: 8rem">Buscar</button>
+          
+      </form>
+        <span class="iconify" data-icon="ant-design:login-outlined" data-width="30" ></span>
+        <a>Login</a>&nbsp&nbsp&nbsp&nbsp&nbsp
+        
+        <span class="iconify" data-icon="ci:settings-filled" data-width="30"></span>
+    </div>
+        
+  </div>
+</nav>
+      
+<!-- Fin de la Barra de menú -->     
+  </head>
+<body  style="background-color: aliceblue">
+    <h1>Este es el Modelo de Home Page</h1>
+      
+      <!-- Carrusel Banner -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../fuente/img/celulares/Celular1.jpg" class="d-block w-5" alt="banner 1" style="margin-left: 50rem" >
+                </div>
+                <div class="carousel-item">
+                    <img src="../fuente/img/carrusel/collage3.png" class="d-block w-5" alt="banner 2" style="margin-left: 45rem">
+                </div>
+                    <div class="carousel-item">
+                <img src="../fuente/img/carrusel/collage1.png" class="d-block w-5" alt="banner 3" style="margin-left: 45rem">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+<!--*******************************************************************************-->
+
+<style>
+
+#body_1{
+        border: 5px solid #a1c50f;
+    }
+    
+.grid{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    column-gap: 1em;
+    grid-row-gap: 1em;
+}
+.grid div{
+    
+    background: #ecf0f1;
+    padding: 1em;
+    
+}
+    
+.grid div:hover{
+    border: 3px solid #f1c40f;
+}
+    .footer{
+        background: #17ABBF;
+        
+    }
+
+    .footer div:hover{
+    border: 3px solid #f1c40f;
+}
+
+    #social-media{
+        background:#17ABBF; 
+    }
+</style>
+    
+<!--******************************Cuerpo*****************************-->
+    
+<!--      
+<div class="row g-3 align-items-center">
+  <div class="col-auto"> -->
+      
+<div id="body_1">
+ <div class="grid">
+     
+      <div>
+        <!--Inicio-->
+           
+          <img src="../fuente/img/logo/fondo1.png" class="img-fluid" alt="fondo" style="justify-items: stretch">
+          <!--Fin-->
+      </div>
+      <div>
+       <!--Inicio-->
+           <!--Contenedor de Misión-->
+      <div class="accordion" id="accordionExample">
+    <!--Boton 1 Acordeon - Mision -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h2><strong>Misión</strong></h2>
+              </button>
+            </h2>
+        </div>
+    
+          <!--Contenido 1 Acordeon - Mision -->
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Lograr mediante la experiencia de negocios de e-comerce satisfacer las necesidades técnicas y comerciales de los clientes. Ofrecer un diverso catálogo de productos y servicios de financiación que faciliten la adquisición de nuestos productos.
+          </div>
+        </div>
+       </div>
+   
+    
+      <!--Boton 2 Acordeon - Mision -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <h2><strong>Visión</strong></h2>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Ser una de las mejores empresas en negocios de e-commerce ofreciendo siempre a nuestros clientes las mejores soluciones para los clientes. No basta con ofrecer una tienda online, nosotros queremos ofrecer servicios complementarios de financiación de productos.
+          </div>
+        </div>
+      </div>
+          <!--Fin-->
+      </div>
+      
+         <div style="background: #17ABBF">
+              <h3 class="mb-3">Acerca de</h3>
+              <p>Somos un equipo de personas apasionadas cuyo objetivo es mejorar la vida de todos a través de productos disruptivos. 
+                            <br/><br/>Creamos excelentes productos para resolver sus problemas comerciales.</p>
+          </div>
+      
+      
+        <div id="connect" style="background: #17ABBF">
+              <h5 class="mb-3">Contacte con nosotros</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="fa fa-comment fa-fw mr-2">​</i>
+                  <span>
+                    <a href="/contactus">Contáctenos</a>
+                  </span>
+                </li>
+                <li>
+                  <i class="fa fa-envelope fa-fw mr-2">​</i>
+                  <span>
+                    <a href="mailto:info@yourcompany.example.com">tiendaonline.equipo4@gmail.com</a>
+                  </span>
+                </li>
+                <li>
+                  <i class="fa fa-phone fa-fw mr-2">​</i>
+                  <span class="o_force_ltr">
+                    <a href="tel:+1 (650) 555-0111">+57 311 211 77 99</a>
+                  </span>
+                </li>
+              </ul>
+              <div id="social-media" class="s_share text-left" data-snippet="s_share" data-name="Social Media" >
+                <h5 class="s_share_title d-none">Síganos</h5>
+                 <a href="" class="s_share_facebook" target="_blank" style="color: white">
+                  <i class="fa fa-facebook rounded-circle shadow-sm">​</i>
+                </a>
+                <a href="" class="s_share_twitter" target="_blank" style="color: white" >
+                  <i class="fa fa-twitter rounded-circle shadow-sm">​</i>
+                </a>
+                <a href="" class="s_share_linkedin" target="_blank" style="color: white">
+                  <i class="fa fa-linkedin rounded-circle shadow-sm">​</i>
+                </a>
+                <a href="" class="text-800 float-right">
+                  <i class="fa fa-home rounded-circle shadow-sm" style="color: white">​</i>
+                </a>
+              </div>
+    </div>
+      
+
+ </div>    
+</div>
+<!--****************************************************************-->  
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<!--************************** Footer *****************************-->
+<div class="footer">
+     <div class="o_footer_copyright o_colored_level o_cc" data-name="Copyright">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-sm text-center text-sm-left text-muted">
+                    <span class="o_footer_copyright_name mr-2" data-oe-id="1883" data-oe-xpath="/data/xpath/span" data-oe-model="ir.ui.view" data-oe-field="arch">Copyright &copy; OnLineStore</span>
+                    <div class="js_language_selector  dropup">
+                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-sm btn-outline-secondary border-0 dropdown-toggle ">
+                            <img class="o_lang_flag" data-oe-model="ir.ui.view" data-oe-id="990" data-oe-field="arch" data-oe-xpath="/t[1]/img[1]" src="../fuente/img/logo/bandera.png" loading="lazy"/>
+                            <span class="align-middle"> Español</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--****************************************************************-->                            
+
+</body>
+</html>
