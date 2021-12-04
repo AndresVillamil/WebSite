@@ -26,20 +26,14 @@
           <div class="row">
             <div class="col-lg-8 mt-4 mt-lg-0 o_colored_level">
               <p>
-                                Contacta con nosotros si tienes alguna inquietud, queja o sugerencia, te lo agradecemos.</p>
-                   <!--estilo del contactenos-->
-              <style>
-                  .col-lg-8 mt-4 mt-lg-0 o_colored_level p{
-                      text-align: center;
-                  }
-              </style>  
+                                Contacta con nosotros si tienes alguna inquietud, queja o sugerencia, te lo agradecemos.</p>  
                  </div>
      <main>
          <!--formulario-->
     <form action="" class="formulario" id="formulario">
         <!--div nombre-->
         <div class="formulario_grupo" id="grupo_nombre">
-            <label for="nombre" class="formulario_label">Nombre</label>
+            <label for="nombre" class="formulario_label">Nombres</label>
             <div class="formulario_grupo-input">
                 <input type="text" class="formulario_input" name="nombre" id="nombre" placeholder="Diego">
                 <i class="formulario_validacion-estado fas fa-times-circle"></i>
@@ -48,7 +42,7 @@
         </div>
         <!--div apellido-->
         <div class="formulario_grupo" id="grupo_apellido">
-            <label for="apellido" class="formulario_label">Apellido</label>
+            <label for="apellido" class="formulario_label">Apellidos</label>
             <div class="formulario_grupo-input">
                 <input type="text" class="formulario_input" name="apellido" id="apellido" placeholder="Rodriguez">
                 <i class="formulario_validacion-estado fas fa-times-circle"></i>
@@ -123,7 +117,7 @@ main{
 }
 .formulario{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /*grid-template-columns: 1fr 1fr;*/
     gap: 20px;
 }
 .formulario_label{
