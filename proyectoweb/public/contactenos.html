@@ -26,95 +26,324 @@
           <div class="row">
             <div class="col-lg-8 mt-4 mt-lg-0 o_colored_level">
               <p>
-                                Contacta con nosotros si tienes alguna inquietud, queja o sugerencia, te lo agradecemos.</p>
-              <section class="s_website_form" data-vcss="001" data-snippet="s_website_form">
-                <div class="container">
-                  <form id="contactus_form" action="/website/form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-mark="*" data-model_name="mail.mail" data-success-mode="redirect" data-success-page="/contactus-thank-you" data-pre-fill="true">
-                    <div class="s_website_form_rows row s_col_no_bgcolor">
-                      <div class="form-group col-12 s_website_form_field s_website_form_custom s_website_form_required" data-type="char" data-name="Field">
-                        <div class="row s_col_no_resize s_col_no_bgcolor">
-                          <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact1">
-                            <span class="s_website_form_label_content">Tú Nombre</span>
-                            <span class="s_website_form_mark"> *</span>
-                          </label>
-                          <div class="col-sm">
-                            <input id="contact1" type="text" class="form-control s_website_form_input" name="name" required="" data-fill-with="name"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group col-12 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
-                        <div class="row s_col_no_resize s_col_no_bgcolor">
-                          <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact2">
-                            <span class="s_website_form_label_content">Número de Teléfono</span>
-                          </label>
-                          <div class="col-sm">
-                            <input id="contact2" type="tel" class="form-control s_website_form_input" name="phone" data-fill-with="phone"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group col-12 s_website_form_field s_website_form_required" data-type="email" data-name="Field">
-                        <div class="row s_col_no_resize s_col_no_bgcolor">
-                          <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact3">
-                            <span class="s_website_form_label_content">Tú correo electrónico</span>
-                            <span class="s_website_form_mark"> *</span>
-                          </label>
-                          <div class="col-sm">
-                            <input id="contact3" type="email" class="form-control s_website_form_input" name="email_from" required="" data-fill-with="email"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group col-12 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
-                        <div class="row s_col_no_resize s_col_no_bgcolor">
-                          <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact4">
-                            <span class="s_website_form_label_content">Tú empresa</span>
-                          </label>
-                          <div class="col-sm">
-                            <input id="contact4" type="text" class="form-control s_website_form_input" name="company" data-fill-with="commercial_company_name"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group col-12 s_website_form_field s_website_form_required" data-type="char" data-name="Field">
-                        <div class="row s_col_no_resize s_col_no_bgcolor">
-                          <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact5">
-                            <span class="s_website_form_label_content">Asunto</span>
-                            <span class="s_website_form_mark"> *</span>
-                          </label>
-                          <div class="col-sm">
-                            <input id="contact5" type="text" class="form-control s_website_form_input" name="subject" required=""/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group col-12 s_website_form_field s_website_form_custom s_website_form_required" data-type="text" data-name="Field">
-                        <div class="row s_col_no_resize s_col_no_bgcolor">
-                          <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact6">
-                            <span class="s_website_form_label_content">Tú pregunta</span>
-                          </label>
-                          <div class="col-sm">
-                            <textarea id="contact6" class="form-control s_website_form_input" name="description" required=""></textarea>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group col-12 s_website_form_field s_website_form_dnone">
-                        <div class="row s_col_no_resize s_col_no_bgcolor">
-                          <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact7">
-                            <span class="s_website_form_label_content">Correo electrónico a</span>
-                          </label>
-                          <div class="col-sm">
-                            <input id="contact7" type="hidden" class="form-control s_website_form_input" name="email_to" value="diegocarrusel@hotmail.com"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group col-12 s_website_form_submit" data-name="Submit Button">
-                        <div style="width: 200px;" class="s_website_form_label"></div>
-                        <a href="#" role="button" class="btn btn-primary btn-lg s_website_form_send">Enviar</a>
-                        <span id="s_website_form_result"></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </section>
-                
+                                Contacta con nosotros si tienes alguna inquietud, queja o sugerencia, te lo agradecemos.</p>  
+                 </div>
+     <main>
+         <!--formulario-->
+    <form action="" class="formulario" id="formulario">
+        <!--div nombre-->
+        <div class="formulario_grupo" id="grupo_nombre">
+            <label for="nombre" class="formulario_label">Nombres</label>
+            <div class="formulario_grupo-input">
+                <input type="text" class="formulario_input" name="nombre" id="nombre" placeholder="Diego">
+                <i class="formulario_validacion-estado fas fa-times-circle"></i>
             </div>
+            <p class="formulario_input-error">Tu nombre tiene que ser de 4 a 20 digitos y solo puede contener letras</p>
+        </div>
+        <!--div apellido-->
+        <div class="formulario_grupo" id="grupo_apellido">
+            <label for="apellido" class="formulario_label">Apellidos</label>
+            <div class="formulario_grupo-input">
+                <input type="text" class="formulario_input" name="apellido" id="apellido" placeholder="Rodriguez">
+                <i class="formulario_validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario_input-error">Tu nombre solo puede contener de 10 a 20 digitos incluido solo letras</p>
+        </div>
+        <!--div telefono-->
+        <div class="formulario_grupo" id="grupo_telefono">
+            <label for="telefono" class="formulario_label">Número de Telefono</label>
+            <div class="formulario_grupo-input">
+                <input type="text" class="formulario_input" name="telefono" id="telefono" placeholder="317594830_601-5436762">
+                <i class="formulario_validacion-estado fas fa-times-circle"></i>
+            </div>
+             <p class="formulario_input-error">El telefono solo puede contener de 7 a 14 dígitos númericos.</p>
+        </div>  
+        <!--div correo-->
+            <div class="formulario_grupo" id="grupo_correo">
+               <label for="correo" class="formulario_label">Correo Electrónico</label>
+               <div class="formulario_grupo-input">
+                    <input type="email" class="formulario_input" name="correo" id="correo" placeholder="correo@correo.com">
+                    <i class="formulario_validacion-estado fas fa-times-circle"></i>
+               </div>
+               <p class="formulario_input-error">El correo solo puede contener letras, numeros, puntos, arroba, guiones y guion bajo.</p>
+            </div>
+        <!--div pregunta-->
+        <div class="formulario_grupo" id="grupo_pregunta">
+                <label for="pregunta" class="formulario_label">Pregunta</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="pregunta" id="pregunta" placeholder="Escribe tu pregunta">
+                    <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario_input-error">Este espacio es obligatorio</p>
+            </div>
+        <!--div asunto-->
+            <div class="formulario_grupo" id="grupo_asunto">
+                <label for="asunto" class="formulario_label">Asunto</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="asunto" id="asunto" placeholder="Escribe tu asunto">
+                   <!-- <textarea class="formcontrol" id="mensaje"></textarea>-->
+                    <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario_input-error">Este espacio es obligatorio</p>
+            </div>
+        <!--div mensaje de error-->
+            <div class="formulario_mensaje" id="formulario_mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i><b>Error:</b>por favor diligencia el formulario correctamente</p>
+            </div>
+        <!--div boton y mensaje de exito-->
+            <div class="formulario_grupo formulario_grupo-btn-enviar">
+                <button type="submit" class="formulario_btn">Enviar</button>
+                <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Formulario enviado exitosamente</p>
+            </div>
+       </form>
+</main>
+                <!--*****************************************************************-->
+                
+    <!--estilo de los divs y mensajes-->
+ <style>
+    /*estilos de la pagina y orden de los inputs y mensajes*/
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "sans-serif";
+    background: #E5E5E5;
+}
+main{
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+.formulario{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr;*/
+    gap: 20px;
+}
+.formulario_label{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+.formulario_grupo-input{
+    position: relative;
+}
+.formulario_input{
+    width: 100%;
+    background: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+.formulario_input:focus{
+    border: 3px solid #0075FF;
+    outline: none;   
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+.formulario_input-error{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+.formulario_input-error-activo{
+    display: block;
+}
+.formulario_validacion-estado{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+.formulario_mensaje,.formulario_grupo-btn-enviar{
+    grid-column: span 2;
+}
+.formulario_mensaje{
+    height: 45px;
+    line-height: 45px;
+    background: #f66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+.formulario_mensaje-activo{
+    display: block;
+}
+.formulario_mensaje p{
+    margin: 0;
+}
+.formulario_grupo-btn-enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario_btn{
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+.formulario_btn:hover{
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+.formulario_mensaje-exito{
+    font-size: 14px;
+    color: #119200;
+    display: none;
+}
+.formulario_mensaje-exito-activo{
+    display: block;
+}
+
+/*estilos validacion*/
+
+.formulario_grupo-correcto .formulario_validacion-estado{
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario_label {
+	color: #bb2929;
+}
+
+.formulario_grupo-incorrecto .formulario_validacion-estado{
+	color: #bb2929;
+    opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario_input {
+	border: 3px solid #bb2929;
+}
+
+/*medidas de la pantalla*/
+@media screen and (max-widht: 800px) {
+    .formulario{
+        grid-template-columns: 1fr;
+    }
+    .formulario_mensaje,
+    .formulario_grupo-btn-enviar{
+        grid-column: 1;
+    }
+    .formulario_btn{
+        width: 100%;
+    }
+}
+</style>
+ 
+                <!--codigo de validacion de javascript-->
+<script>
+    //llamado de los ids
+    var formulario = document.getElementById("formulario");
+var inputs = document.querySelectorAll("#formulario input");
+    //expresiones regulares 
+var expresiones = {
+	nombre :  /^[a-zA-ZÀ-ÿ\s]{4,20}$/, // Letras y espacios, pueden llevar acentos.
+    telefono: /^\d{7,14}$/, // 7 a 14 numeros.
+    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+    pregunta: /^[a-zA-Z0-9\_\-]{1,100}$/, // Letras, numeros, guion y guion_bajo
+    asunto :  /^[a-zA-ZÀ-ÿ\s]{1,100}$/, // Letras y espacios, pueden llevar acentos.
+}; 
+var campos ={
+    nombre : false,
+    apellido : false,
+    telefono : false,
+    correo : false,
+    asunto : false,
+    pregunta : false
+};
+    
+//funcion y switch para la validacion
+var validarFormulario= (e) => {
+    switch(e.target.name)
+    {
+        case "nombre":
+           validarCampo(expresiones.nombre, e.target, "nombre")
+        break;
+        case "apellido":
+            validarCampo(expresiones.nombre, e.target, "apellido")
+        break;
+        case "telefono":
+            validarCampo(expresiones.telefono, e.target, "telefono")
+        break;
+        case "correo":
+            validarCampo(expresiones.correo, e.target, "correo")
+        break;
+        case "asunto":
+            validarCampo(expresiones.asunto, e.target, "asunto")
+        break;
+        case "pregunta":
+            validarCampo(expresiones.pregunta, e.target, "pregunta")
+        break;
+    }    
+}
+
+//funcion tipo flecha de validacion dependiendo de las respuestas
+var validarCampo = (expresion, input, campo) => {
+    if(expresion.test(input.value)){
+		document.getElementById(`grupo_${campo}`).classList.remove('formulario_grupo-incorrecto');
+		document.getElementById(`grupo_${campo}`).classList.add('formulario_grupo-correcto');
+		document.querySelector(`#grupo_${campo} i`).classList.add('fa-check-circle');
+		document.querySelector(`#grupo_${campo} i`).classList.remove('fa-times-circle');
+		document.querySelector(`#grupo_${campo} .formulario_input-error`).classList.remove('formulario_input-error-activo');
+        document.getElementById("formulario_mensaje").classList.remove("formulario_mensaje-activo")
+        campos[campo] = true;
+	} else {
+		document.getElementById(`grupo_${campo}`).classList.add('formulario_grupo-incorrecto');
+		document.getElementById(`grupo_${campo}`).classList.remove('formulario_grupo-correcto');
+		document.querySelector(`#grupo_${campo} i`).classList.add('fa-times-circle');
+		document.querySelector(`#grupo_${campo} i`).classList.remove('fa-check-circle');
+		document.querySelector(`#grupo_${campo} .formulario_input-error`).classList.add('formulario_input-error-activo');
+        campos[campo] = false;
+	}
+}
+
+//generador de un ciclo por cada input
+inputs.forEach((input) => {
+    //escuchador de los inputs
+   input.addEventListener("keyup", validarFormulario);
+    //escuchador del mouse sobre un input 
+    input.addEventListener("blur", validarFormulario);
+});
+
+    //escuchador del envio de formulario
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault();
+    //condicion si todos los campos son true
+    if(campos.nombre && campos.apellido && campos.telefono && campos.correo && campos.asunto && campos.pregunta){
+        formulario.reset();
+ //agregar una clase al mensaje de exito
+        document.getElementById("formulario_mensaje-exito").classList.add("formulario_mensaje-exito-activo");
+        //quitar el mensaje despues de un tiempo
+        setTimeout(() =>{
+            document.getElementById("formulario_mensaje-exito").classList.remove("formulario_mensaje-exito-activo"); 
+        }, 2000);
+        //quitar los iconos por cada input
+        document.querySelectorAll(".formulario_grupo-correcto").forEach((icono) => {
+            icono.classList.remove("formulario_grupo-correcto");
+        });
+    }
+    //mensaje de error por no diligenciar bien el formulario
+    else{
+        document.getElementById("formulario_mensaje").classList.add("formulario_mensaje-activo");
+    }
+});
+</script>
+            <!--iconos de la comprobacion-->    
+     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>  
+      
+    <!--***************************************************************************-->
+                
+           
             <div class="col-lg-4 mt-4 mt-lg-0 o_colored_level">
               <ul class="list-unstyled mb-0 pl-2">
                 <li>Mi compañía</li>
